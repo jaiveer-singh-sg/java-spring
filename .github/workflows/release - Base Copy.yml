@@ -23,8 +23,7 @@ on:
 jobs:
   docker:
     runs-on: ubuntu-latest
-    # 1. ADD THIS LINE so GitHub knows to look inside your "docker-env"
-    environment: docker-env
+
     steps:
       - uses: actions/checkout@v4
 

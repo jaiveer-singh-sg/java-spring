@@ -1,3 +1,30 @@
+Git Actions to Create Docker Images and Publish to Docker Registry
+
+https://hub.docker.com/repositories/shipdockers
+
+1. Run
+docker login -u shipdockers
+
+2. At the password prompt, enter the personal access token.
+
+dckr_pat_tQZ5DDf7VN6QPHkeaWwJbbd_mjA
+
+# This Github Actions workflow will build and publish a Docker image when the "release" tag is
+# added to a commit.
+#
+# To create or move the "release" tag to the latest commit on main:
+#   git checkout main
+#   git pull origin main
+#   git tag -f release
+#   git push origin release --force
+#
+# Or, to delete and recreate the tag without --force:
+#   git tag -d release
+#   git push origin :refs/tags/release
+#   git tag release
+#   git push origin release
+
+============== release.yml
 # This Github Actions workflow will build and publish a Docker image when the "release" tag is
 # added to a commit.
 #
