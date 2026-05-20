@@ -1,14 +1,3 @@
-Git Actions to Create Docker Images and Publish to Docker Registry
-
-https://hub.docker.com/repositories/shipdockers
-
-1. Run
-docker login -u shipdockers
-
-2. At the password prompt, enter the personal access token.
-
-dckr_pat_tQZ5DDf7VN6QPHkeaWwJbbd_mjA
-
 # This Github Actions workflow will build and publish a Docker image when the "release" tag is
 # added to a commit.
 #
